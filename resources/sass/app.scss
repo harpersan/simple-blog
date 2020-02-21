@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+// Variables
+// @import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.nav-categories {
+  a {
+    background-image: url(../images/cat/car.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 24px;
+  }
+}
+
+.translate-link:hover {
+  transition: all .2s ease!important;
+  transform: translateX(2px)!important;
+}
+
+.truncate-2nd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
